@@ -16,7 +16,7 @@ try:
     print('На ' + now + ' интернет доступен.')
     flag = True
 except:
-    print('На ' + now + ' интернет не доступен.')
+    print('На ' + now + ' нет доступа к интернету.')
 
 for i in range(len(drives)):
     try:
@@ -27,7 +27,7 @@ for i in range(len(drives)):
         os.chdir(tempdir)
     except:
         now = datetime.now().strftime("%H:%M")
-        print('На ' + now + ' диск ' + drives[i][0] + ' не доступен.')
+        print('На ' + now + ' нет доступа к диску ' + drives[i][0] + '.')
         flags.append('0')
 
 print('\nМониторим...\n')
