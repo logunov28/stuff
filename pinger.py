@@ -80,8 +80,3 @@ while True:
                 w = ctypes.windll.user32.MessageBoxW(None, u"Диск " + drives[i][0] + " отвалился...", u"Беда!", 0x1000)
                 flags[i] = '0'
         sleep(5)
-
-
-
-
-
