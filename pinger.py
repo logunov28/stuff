@@ -5,7 +5,7 @@ from datetime import datetime
 tempdir = os.getenv('TEMP')
 os.chdir(tempdir)
 
-drives = ['C:\\', 'D:\\', 'E:\\'] #расхардкодить
+drives = win32api.GetLogicalDriveStrings().split("\x00")[:-1]
 flags = []
 flag = False
 
