@@ -16,6 +16,7 @@ try:
     print('На ' + now + ' интернет доступен.')
     flag = True
 except:
+    now = datetime.now().strftime("%H:%M")
     print('На ' + now + ' нет доступа к интернету.')
 
 for i in range(len(drives)):
